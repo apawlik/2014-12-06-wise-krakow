@@ -1,38 +1,26 @@
 ---
 layout: workshop
 root: .
-venue: Euphoric State University
-address: 123 College Street, Euphoria
-country: United-States
-humandate: Feb 17-18, 2020
-humantime: 9:00 am - 4:30 pm
-startdate: 2020-06-17
-enddate: 2020-06-18
-latlng: 41.7901128,-87.6007318
-registration: restricted
-instructor: ["Grace Hopper", "Alan Turing"]
-helper: ["John von Neumann"]
-contact: admin@software-carpentry.org
-#redirect: http://www.3rd.party.workshop.home.page.com
+venue: Women in Science and Engineering
+address: Ambasada Krakowian, Warsztaty odbędą się w Ambasadzie Krakowian,  ul. Stolarska 6/9, 31-043 Kraków
+country: Poland
+humandate: Dec 06-07, 2014
+humantime: 9:00 am - 5:00 pm
+startdate: 2014-12-06
+enddate: 2014-12-07
+latlng: 50.0604346,19.9394356
+registration: open
+instructor: ["Paulina Lach", "Aleksandra Pawlik"]
+helper: ["Agnieszka Celi&#324;ska, Iwona Grelowska"]
+contact: admin-uk@software-carpentry.org
 #eventbrite: 00000000000
-lessons: ['R', 'Python', 'SQL', 'Git', 'Bash', 'VM']
+lessons: ['Python', 'SQL', 'Git', 'Bash']
 ---
 <!--
     Edit the values in the parameter block above to be appropriate for your workshop.
     Please use three-letter month names for the 'humandate' field.
 -->
 
-<!-- Remove the block below. -->
-<div align="center">
-  <p><strong><em>
-      This page is a template for workshop home pages.
-      <br/>
-      Please see
-      <a href="//github.com/swcarpentry/bc">github.com/swcarpentry/bc</a>
-      for instructions on how to create
-      a repository for your workshop.
-  </em></strong></p>
-</div>
 
 <!--
     This block includes the Eventbrite registration widget if 'eventbrite' has been set in the header.
@@ -50,17 +38,25 @@ lessons: ['R', 'Python', 'SQL', 'Git', 'Bash', 'VM']
   src="//www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt" frameborder="0" width="100%" height="206px" scrolling="auto"></iframe>
 {% endif %}
 
-<h2>General Information</h2>
+<h2>Opis warsztatów</h2>
 
 <p>
-  <a href="//software-carpentry.org">Software Carpentry</a>'s mission
-  is to help scientists and engineers become more productive
-  by teaching them basic lab skills for computing
-  like program design, version control, data management, and task automation.
-  This two-day hands-on workshop will cover basic concepts and tools;
-  participants will be encouraged to help one another
-  and to apply what they have learned to their own research problems.
+Warsztaty <a href="//software-carpentry.org">Software Carpentry</a> mają na celu pomaganie naukowcom i inżynierom ucząc ich umiejętności, takich jak projektowanie oprogramowania, kontrola wersji, zarządzanie danymi i automatyzacja zadań, dzięki którym są oni bardziej produktywni w swojej codziennej pracy. W czasie dwudniowych warsztatów uczestnicy zachęcani są by pracować razem i stosować umiejętności zdobyte podczas szkolenia do rozwiązywania własnym problemów badawczych
+
 </p>
+
+<p>
+ Warsztaty Software Carpentry odbywają się na całym świecie od ponad 5 lat i cieszą się
+ogromną popularnością. Uczestnikami są nie tylko naukowcy, choć
+Software Carpentry jest przygotowane przede wszystkim dla nich.
+Celem WiSE jest zachęcenie kobiet do informatyki poprzez warsztaty
+specjalnie dla nich.
+</p>
+
+<p>
+Warsztaty w Krakowie objęte są patronatem Polskiego Towarzystwa Informatycznego, Oddział Małopolski.
+</p>
+<img src="{{page.root}}/img/PTI_O_Malopolski.png" alt="PIT Logo" style="padding:10px"/>
 
 <!--
     Modify this block to reflect the target audience for your workshop.
@@ -68,18 +64,26 @@ lessons: ['R', 'Python', 'SQL', 'Git', 'Bash', 'VM']
     or if specialized prerequisite knowledge is required, please mention that.
 -->
 <p>
-  <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
+  <strong>Dla kogo:</strong> <br/>
+Software Carpentry Woman in Science and Engineering (WiSE) to
+dwudniowe warsztaty dla kobiet zajmujących się zawodowo lub
+zainteresowanych nauką oraz przedmiotami inżynieryjnymi. W niemal
+wszystkich tych dziedzinach informatyzacja jest powszechna i znajomość
+zagadnień związanych z programowaniem jest koniecznością. Software Carpentry WiSE to warsztaty praktyczne, podczas których uczestniczki uczyć się będą jak
+pracować z liną komend (środowisko Unix), kontrolą wersji (Git i
+GitHub); poznają podstawy dobrych praktyk programistycznych z użyciem
+języka Python i podstawy baz danych z SQL.
 </p>
+
+
 
 <!--
     This block displays the address and links to a map showing directions.
 -->
 {% if page.latlng %}
 <p>
-  <strong>Where:</strong>
-  {{ page.address }}.
-  Get directions with
+  <strong>Lokalizacja:</strong>
+  {{ page.address }}. 
   <a href="//www.openstreetmap.org/?mlat={{ page.latlng | replace:',','&mlon=' }}&zoom=16">OpenStreetMap</a>
   or
   <a href="//maps.google.com/maps?q={{ page.latlng }}">Google Maps</a>.
@@ -90,9 +94,17 @@ lessons: ['R', 'Python', 'SQL', 'Git', 'Bash', 'VM']
     Modify the block below if there are any special requirements.
 -->
 <p>
-  <strong>Requirements:</strong>
-  Participants must bring a laptop with a few specific software packages installed
-  (listed below). They are also required to abide by Software Carpentry's
+  <strong>Wymagania:</strong>
+  
+Warsztaty przeznaczone są dla osób początkujących. Podstawowa znajomość zagadnień związanych z  programowaniem (zmienne, pętle, warunki itd.) będzie pomocna, ale nie jest wymagana.
+<br/><br/>
+
+<div class="alert">Uczestniczki proszone są o przyniesienie na warsztaty <strong>własne laptopy</strong>. Konieczne będzie skonfigurowanie ich <strong> przed </strong> warsztatami, zgodnie z podanymi poniżej instrukcjami. </div>
+
+Warsztaty odbywać się będą po polsku, ale wszystkie materiały (włącznie z instrukcjami, jak skonfigurować laptopy) są w języku angielskim.
+<br/>
+
+Wszystkie uczestniczki zobowiązane są przestrzegać Software Carpentry
   <a href="http://software-carpentry.org/conduct.html">Code of Conduct</a>.
 </p>
 
@@ -101,14 +113,14 @@ lessons: ['R', 'Python', 'SQL', 'Git', 'Bash', 'VM']
     If one hasn't, this block inserts the generic contact address for Software Carpentry.
 -->
 <p>
-  <strong>Contact</strong>:
-  Please mail
+  <strong>Kontakt</strong>:
+  Wszelkie pytania prosimy kierować na adres:
   {% if page.contact %}
     <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
   {% else %}
     <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
   {% endif %}
-  for more information.
+
 </p>
 
 <hr/>
@@ -116,29 +128,29 @@ lessons: ['R', 'Python', 'SQL', 'Git', 'Bash', 'VM']
 <!--
     Edit this block to show the schedule for your workshop.
 -->
-<h2>Schedule</h2>
+<h2>Plan</h2>
 
 <div class="row-fluid">
   <div class="span6">
     <h3>Day 1</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td> <td>Automating tasks with the Unix shell</td> </tr>
+      <tr> <td>09:30</td> <td>Automating tasks with the Unix shell</td> </tr>
       <tr> <td><em>10:30</em></td> <td><em>Coffee break</em></td> </tr>
       <tr> <td>12:00</td> <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td> <td>Building programs with Python</td> </tr>
+      <tr> <td>13:00</td> <td>Version control with Git</td> </tr>
       <tr> <td><em>14:30</em></td> <td><em>Coffee break</em></td> </tr>
-      <tr> <td>16:00</td> <td>Wrap-up</td> </tr>
+      <tr> <td>17:30</td> <td>Wrap-up</td> </tr>
     </table>
   </div>
   <div class="span6">
     <h3>Day 2</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td> <td>Version control with Git</td> </tr>
+      <tr> <td>09:30</td> <td>Good programming practices with Python</td> </tr>
       <tr> <td><em>10:30</em></td> <td><em>Coffee break</em></td> </tr>
       <tr> <td>12:00</td> <td>Lunch break</td> </tr>
       <tr> <td>13:00</td> <td>Managing data with SQL</td> </tr>
       <tr> <td><em>14:30</em></td> <td><em>Coffee break</em></td> </tr>
-      <tr> <td>16:00</td> <td>Wrap-up</td> </tr>
+      <tr> <td>17:30</td> <td>Wrap-up</td> </tr>
     </table>
   </div>
 </div>
@@ -176,17 +188,7 @@ lessons: ['R', 'Python', 'SQL', 'Git', 'Bash', 'VM']
       <li><a href="novice/ref/03-python.html">Reference...</a></li>
     </ul>
   </div>
-  <div class="span6">
-    <h3>Programming in R</h3>
-    <ul>
-      <li>Working with vectors and data frames</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals: <code>for</code>, <code>if</code>, <code>else</code></li>
-      <li>Using R from the command line</li>
-      <li><a href="novice/ref/06-R.html">Reference...</a></li>
-    </ul>
-  </div>
+
 </div>
 
 <div class="row-fluid">
