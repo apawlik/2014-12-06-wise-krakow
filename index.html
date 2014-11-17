@@ -2,16 +2,16 @@
 layout: workshop
 root: .
 venue: Women in Science and Engineering
-address: Ambasada Krakowian, Warsztaty odbędą się w Ambasadzie Krakowian,  ul. Stolarska 6/9, 31-043 Kraków
+address: Ambasada Krakowian, ul. Stolarska 6/9, 31-043 Kraków
 country: Poland
-humandate: Dec 06-07, 2014
+humandate: 6-7 grudnia / Dec 06-07, 2014 
 humantime: 9:00 am - 5:00 pm
 startdate: 2014-12-06
 enddate: 2014-12-07
 latlng: 50.0604346,19.9394356
 registration: open
-instructor: ["Paulina Lach", "Aleksandra Pawlik"]
-helper: ["Agnieszka Celi&#324;ska, Iwona Grelowska"]
+instructorzy: ["Paulina Lach", "Aleksandra Pawlik"]
+pomocnicy: ["Agnieszka Celi&#324;ska, Iwona Grelowska"]
 contact: admin-uk@software-carpentry.org
 #eventbrite: 00000000000
 lessons: ['Python', 'SQL', 'Git', 'Bash']
@@ -83,9 +83,9 @@ języka Python i podstawy baz danych z SQL.
 {% if page.latlng %}
 <p>
   <strong>Lokalizacja:</strong>
-  {{ page.address }}. 
+  {{ page.address }}. <br/> Zobacz na:
   <a href="//www.openstreetmap.org/?mlat={{ page.latlng | replace:',','&mlon=' }}&zoom=16">OpenStreetMap</a>
-  or
+  lub
   <a href="//maps.google.com/maps?q={{ page.latlng }}">Google Maps</a>.
 </p>
 {% endif %}
