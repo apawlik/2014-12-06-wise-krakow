@@ -11,7 +11,7 @@ Setup
 1. Install Firefox
 2. Install the SQLite Manager add on **Tools -> Add-ons -> Search -> SQLite
 Manager -> Install -> Restart**
-3. Download the [Portal Database](../../data/biology/portal_mammals.sqlite)
+3. Download the [Portal Database](../../data/bio/portal_mammals.sqlite)
 4. Open SQLite Manage **Firefox Button -> Web Developer -> SQLite Manager**
 
 
@@ -78,7 +78,7 @@ Import
 8. When asked if you want to modify the table, click **OK**
 9. Set the data types for each field
 
-***EXERCISE: Import the plots and species tables***
+***EXERCISE: Import the [plots](../../data/bio/plots.csv) and [species](../../data/bio/species.csv) tables***
 
 You can also use this same approach to append new data to an existing table.
 
